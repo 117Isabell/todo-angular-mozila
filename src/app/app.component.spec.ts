@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { ItemComponent } from './item/item.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -27,3 +28,17 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, todo');
   });
 });
+
+// describe('AppComponent', () => {
+//   beforeEach(async () => {
+//     TestBed.configureTestingModule({
+//       declarations: [AppComponent, ItemComponent],
+//     }).compileComponents();
+//   });
+
+//   it('should create the app', () => {
+//     const fixture = TestBed.createComponent(AppComponent);
+//     const app = fixture.debugElement.componentInstance;
+//     expect(app).toBeTruthy();
+//   });
+// });
